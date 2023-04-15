@@ -1,0 +1,3 @@
+venv/
+TokenPrice/prices/migrations/*
+TokenPrice/TokenPrice/__pycache__/
