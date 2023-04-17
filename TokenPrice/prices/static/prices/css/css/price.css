@@ -21,7 +21,6 @@ main {
 
 .table-head {
   margin-top: 50px;
-  font-weight: 700;
 }
 .table-head .token-rank {
   margin-left: 20px;
@@ -46,6 +45,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   font-size: 12px;
+  font-weight: 700;
   border-bottom: 1px solid rgba(128, 128, 128, 0.211);
 }
 .table-row .token-name {
@@ -68,4 +68,7 @@ main {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+.table-row .token-naming .token-short-name {
+  font-weight: 500;
 }

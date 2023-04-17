@@ -18,15 +18,15 @@
             </div>
             {%for token in tokens%}
             <div class="table-row">
-                <p class="token-rank">{{token.pk}}</p>
+                <p class="token-rank">{{forloop.counter}}</p>
                 <div class="token-naming">
-                    <p>{{token.name}}</p>
+                    <p class="token-full-name">{{token.name}}</p>
                     <p class="token-short-name">{{token.short_name}}</p>
                 </div>
-                <p class="token-price">{{token.price}}</p>
-                <p class="token-change">{{token.change_day}}</p>
-                <p class="token-volume">{{token.volume_day}}</p>
-                <p class="token-cap">{{token.market_cap}}</p>
+                <p class="token-price">{{token.price}} $</p>
+                <p class="token-change">{{token.change_day}} %</p>
+                <p class="token-volume">$ {{token.volume_day}} {{token.volume_day_char}}</p>
+                <p class="token-cap">$ {{token.market_cap}} {{token.market_cap_char}}</p>
             </div>
             {%endfor%}
         </div>

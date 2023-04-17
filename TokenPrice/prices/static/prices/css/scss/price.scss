@@ -13,7 +13,6 @@ main {
 }
 .table-head {
     margin-top: 50px;
-    font-weight: 700;
     .token-rank {
         margin-left: 20px;
         margin-right: 40px;
@@ -30,6 +29,7 @@ main {
     min-height: 70px;
     align-items: center;
     font-size: 12px;
+    font-weight: 700;
     border-bottom: 1px solid rgba(128, 128, 128, 0.211);
     .token-name{
         flex-basis: 10em;
@@ -40,5 +40,9 @@ main {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
+
+        .token-short-name{
+            font-weight: 500;
+        }
     }
 }
