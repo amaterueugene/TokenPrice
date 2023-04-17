@@ -1,0 +1,71 @@
+main {
+  background: rgba(219, 219, 219, 0.375);
+  min-height: 100%;
+}
+
+.container {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1380px;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.table-head {
+  margin-top: 50px;
+  font-weight: 700;
+}
+.table-head .token-rank {
+  margin-left: 20px;
+  margin-right: 40px;
+}
+.table-head .token-name {
+  margin-right: 40px;
+}
+
+.table-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.211);
+}
+.table-row .token-name {
+  -ms-flex-preferred-size: 10em;
+      flex-basis: 10em;
+}
+.table-row .token-naming {
+  -ms-flex-preferred-size: 10em;
+      flex-basis: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}

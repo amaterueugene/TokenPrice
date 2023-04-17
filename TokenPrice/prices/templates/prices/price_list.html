@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{%load static%}
+{%block add_links%}
+<link rel="stylesheet" href="{%static 'prices/css/css/price.css'%}">
+{%endblock%}
+
+{%block content%}
+<main>
+    <article>
+        <div class="container">
+            <div class="table-head table-row">
+                <p class="token-rank">#</p>
+                <p class="token-name">NAME</p>
+                <p class="token-price">PRICE</p>
+                <p class="token-change">24H CHANGE</p>
+                <p class="token-volume">24H VOLUME</p>
+                <p class="token-cap">MARKET CAP</p>
+            </div>
+            {%for token in tokens%}
+            <div class="table-row">
+                <p class="token-rank">{{token.pk}}</p>
+                <div class="token-naming">
+                    <p>{{token.name}}</p>
+                    <p class="token-short-name">{{token.short_name}}</p>
+                </div>
+                <p class="token-price">{{token.price}}</p>
+                <p class="token-change">{{token.change_day}}</p>
+                <p class="token-volume">{{token.volume_day}}</p>
+                <p class="token-cap">{{token.market_cap}}</p>
+            </div>
+            {%endfor%}
+        </div>
+    </article>
+</main>
+{%endblock%}

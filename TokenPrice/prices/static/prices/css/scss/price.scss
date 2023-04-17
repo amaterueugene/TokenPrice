@@ -1,0 +1,44 @@
+main {
+    background: rgba(219, 219, 219, 0.375);
+    min-height: 100%;
+}
+
+.container {
+    background-color: #fff;
+    display: flex;
+    max-width: 1380px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+}
+.table-head {
+    margin-top: 50px;
+    font-weight: 700;
+    .token-rank {
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+    .token-name {
+        margin-right: 40px;
+    }
+}
+
+.table-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 70px;
+    align-items: center;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.211);
+    .token-name{
+        flex-basis: 10em;
+    }
+    .token-naming{
+        flex-basis: 10em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
