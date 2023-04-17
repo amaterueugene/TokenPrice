@@ -5,7 +5,7 @@ from .models import Token
 
 class TokenPriceList(ListView):
     model = Token
-    template_name = 'prices/token_price_list.html'
+    template_name = 'prices/price_list.html'
     context_object_name = 'tokens'
 
     def get_context_data(self, **kwargs):
