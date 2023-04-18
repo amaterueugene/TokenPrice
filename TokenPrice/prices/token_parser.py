@@ -10,8 +10,8 @@ base_url = 'https://crypto.com/price'
 
 
 def parse_tokens():
+    '''Parsing all the information about top 50 tokens and returning a list with the data'''
     tokens_data = []
-    digits = [1,2,3,4,5,6,7,8,9,0]
     response = requests.get(base_url, headers=headers)
     soup = BeautifulSoup(response.text, 'lxml')
     data = soup.find('div', class_='css-1v8x7dw').find('table', class_='chakra-table css-1qpk7f7').find('tbody')
@@ -31,6 +31,7 @@ def parse_tokens():
 
         token_cap = token.find_all('td', class_='css-1nh9lk8')[1].text.replace('B','').replace('M','').replace('$','').replace(',','')
         token_cap_char = token.find_all('td', class_='css-1nh9lk8')[1].text.replace('$','').replace(',','').split(' ')[-1]
-        print(str(token_name) + str(token_cap_char) + str(token_volume_char))
+
         tokens_data += [[token_id, token_name, token_short_name, token_price, token_change, token_volume, token_volume_char, token_cap, token_cap_char]]
+    
     return tokens_data

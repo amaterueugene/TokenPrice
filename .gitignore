@@ -1,5 +1,6 @@
 venv/
-TokenPrice/prices/migrations/*
+TokenPrice/prices/migrations/
 TokenPrice/TokenPrice/__pycache__/
 TokenPrice/prices/__pycache__/
+TokenPrice/prices/rest/__pycache__/
 TokenPrice/db.sqlite3

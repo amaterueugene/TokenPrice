@@ -12,6 +12,7 @@ class TokenPriceList(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['page_title'] = ' - Prices'
+        '''Updating tokens data in db when reloading the page'''
         Token.objects.all().delete()
         tokens_data = parse_tokens()
         for token in tokens_data:

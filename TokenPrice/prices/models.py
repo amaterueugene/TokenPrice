@@ -1,6 +1,7 @@
 from django.db import models
 
 class Token(models.Model):
+    '''Model of the token'''
     name = models.CharField(max_length=100, verbose_name='Name')
     short_name = models.CharField(max_length=100, verbose_name='ShortName')
     price = models.FloatField(verbose_name='TokenPrice')
